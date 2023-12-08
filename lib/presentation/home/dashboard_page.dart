@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_fic9_ecommerce_app/common/constants/colors.dart';
-import 'package:flutter_fic9_ecommerce_app/common/constants/images.dart';
+
+import '../../common/constants/colors.dart';
+import '../../common/constants/images.dart';
 
 class DashboardPage extends StatefulWidget {
   const DashboardPage({super.key});
@@ -14,6 +15,9 @@ class _DashboardPageState extends State<DashboardPage> {
 
   final List<Widget> _pages = [
     const Center(child: Text('Home Page')),
+    const Center(
+      child: Text('Explore Page'),
+    ),
     const Center(child: Text('Cart Page')),
     const Center(child: Text('Account Page')),
   ];

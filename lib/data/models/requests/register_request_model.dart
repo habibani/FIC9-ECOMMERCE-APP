@@ -1,5 +1,11 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'dart:convert';
+
+// {
+//     "name": "bahri",
+//     "password": "12345678",
+//     "email": "bahri1@gmail.com",
+//     "username": "bahri"
+// }
 
 class RegisterRequestModel {
   final String name;
@@ -7,14 +13,14 @@ class RegisterRequestModel {
   final String email;
   final String username;
 
-  RegisterRequestModel({
-    required this.name, 
-    required this.password, 
-    required this.email, 
-    required this.username});
+  RegisterRequestModel(
+      {required this.name,
+      required this.password,
+      required this.email,
+      required this.username});
 
   Map<String, dynamic> toMap() {
-    return <String, dynamic>{
+    return {
       'name': name,
       'password': password,
       'email': email,
@@ -24,4 +30,3 @@ class RegisterRequestModel {
 
   String toJson() => json.encode(toMap());
 }
-

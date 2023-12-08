@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_fic9_ecommerce_app/common/components/button.dart';
-import 'package:flutter_fic9_ecommerce_app/common/components/custom_text_field.dart';
-import 'package:flutter_fic9_ecommerce_app/common/components/spaces.dart';
-import 'package:flutter_fic9_ecommerce_app/common/constants/colors.dart';
-import 'package:flutter_fic9_ecommerce_app/common/constants/images.dart';
 import 'package:flutter_fic9_ecommerce_app/data/models/requests/register_request_model.dart';
 import 'package:flutter_fic9_ecommerce_app/presentation/auth/bloc/register/register_bloc.dart';
 import 'package:flutter_fic9_ecommerce_app/presentation/auth/login_page.dart';
+import 'package:flutter_fic9_ecommerce_app/presentation/home/dashboard_page.dart';
+
+import '../../common/components/button.dart';
+import '../../common/components/custom_text_field.dart';
+import '../../common/components/spaces.dart';
+import '../../common/constants/colors.dart';
+import '../../common/constants/images.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({super.key});
@@ -48,7 +50,7 @@ class _RegisterPageState extends State<RegisterPage> {
           const SpaceHeight(24.0),
           const Center(
             child: Text(
-              "Daftarlah sekarang untuk bergabung dengan kami!",
+              "Mari mulai",
               style: TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.w700,
@@ -59,7 +61,7 @@ class _RegisterPageState extends State<RegisterPage> {
           const SpaceHeight(8.0),
           const Center(
             child: Text(
-              "registrasi akun baru",
+              "Buat akun baru",
               style: TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.w400,
